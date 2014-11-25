@@ -38,10 +38,10 @@ sudo chmod 640 $final_path/index.php
 sudo chown root:www-data $final_path/index.php
 
 #getting mysql root pass
-mysql_pass=$(sudo cat /etc/yunohost/mysql)
-sudo sed -i "s@USERNAME_YNH@root@g" $final_path/index.php
-sudo sed -i "s@PASSWORD_YNH@$mysql_pass@g" $final_path/index.php
-sudo sed -i "s@DATABASE_YNH@mysql@g" $final_path/index.php
+# mysql_pass=$(sudo cat /etc/yunohost/mysql)
+# sudo sed -i "s@USERNAME_YNH@root@g" $final_path/index.php
+# sudo sed -i "s@PASSWORD_YNH@$mysql_pass@g" $final_path/index.php
+# sudo sed -i "s@DATABASE_YNH@mysql@g" $final_path/index.php
 
 
 #configure nginx settings
